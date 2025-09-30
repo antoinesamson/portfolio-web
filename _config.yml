@@ -1,7 +1,7 @@
 # Site settings
 title: Portfolio | Antoine Samson
 description: Mon portfolio de développeur web
-baseurl: "/docs" # The subpath of your site, e.g. /blog
+
 url: "https://github.com/antoinesamson" # The base hostname & protocol for your site
 
 # Build settings
