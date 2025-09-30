@@ -1,34 +1,42 @@
-<!-- {% include "_includes/_header.html" %} -->
-
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Antoine Samson | Portfolio</title>
 
-        <link rel="icon" type="image/svg" href="./assets/favicons/portfolio-favicon.svg">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antoine Samson | Portfolio</title>
+
+    <link rel="icon" type="image/svg" href="./assets/favicons/portfolio-favicon.svg">
 
 
-        <link rel="stylesheet" href="portfolio-web/styles/main.css" />
-        <script src="portfolio-web/scripts/main.js" defer></script>
-    </head>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
 
-    <body data-component="Scrolly" data-no-repeat>
-        <canvas id="canvas" data-component="Background">Le canvas ne fonctionne pas</canvas>
+<body data-component="Scrolly" data-no-repeat>
+    <canvas id="canvas" data-component="Background">Le canvas ne fonctionne pas</canvas>
 
-        <header class="header" data-component="Header">
-            <div class="wrapper">
-                <div class="menu">
+    <header class="header" data-component="Header">
+        <div class="wrapper">
+            <div class="menu">
                 <a class="logo" href="index.html#hero">
                     <h5>AS</h5>
                     <h5 class="hover">AS</h5>
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="index.html#about"><div>À propos</div><div class="hover">À propos</div></a></li>
-                        <li><a href="projets.html"><div>Projets</div><div class="hover">Projets</div></a></li>
-                        <li><a href="index.html#contact"><div>Contact</div><div class="hover">Contact</div></a></li>
+                        <li><a href="index.html#about">
+                                <div>À propos</div>
+                                <div class="hover">À propos</div>
+                            </a></li>
+                        <li><a href="projets.html">
+                                <div>Projets</div>
+                                <div class="hover">Projets</div>
+                            </a></li>
+                        <li><a href="index.html#contact">
+                                <div>Contact</div>
+                                <div class="hover">Contact</div>
+                            </a></li>
                     </ul>
                 </nav>
 
@@ -38,216 +46,207 @@
                     <span></span>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <div class="cursor" id="cursor" data-component="Cursor"></div>
+
+
+    <section class="hero" id="hero" data-component="Parallax">
+        <div class="wrapper">
+            <div class="parallax-wrap">
+                <h1 class="parallax-element" valueX="10" valueY="5">
+                    <div class="left">Antoine</div>
+
+                    <div class="right">Samson</div>
+                </h1>
+
+                <h2 class="parallax-element" valueX="5" valueY="1">Développeur web junior</h2>
+
+                <div class="hero-grid parallax-element" valueX="-10" valueY="-5">
+                    <p>Je suis un étudiant bientôt diplômé en intégration multimédia et je recherche un stage en intégration Web</p>
+
+                    <a class="button" href="projets.html">Voir les projets</a>
+                </div>
             </div>
-        </header>
 
-        <div class="cursor" id="cursor" data-component="Cursor"></div>
-
-
-<section class="hero" id="hero" data-component="Parallax">
-    <div class="wrapper">
-        <div class="parallax-wrap">
-            <h1 class="parallax-element" valueX="10" valueY="5">
-                <div class="left">Antoine</div>
-
-                <div class="right">Samson</div>
-            </h1>
-
-            <h2 class="parallax-element" valueX="5" valueY="1">Développeur web junior</h2>
-
-            <div class="hero-grid parallax-element" valueX="-10" valueY="-5">
-                <p>Je suis un étudiant bientôt diplômé en intégration multimédia et je recherche un stage en intégration Web</p>
-
-                <a class="button" href="projets.html">Voir les projets</a>
+            <div class="arrow">
+                <svg class="icon icon--md" data-scrolly="slideDown">
+                    <use xlink:href="#icon-arrow-down"></use>
+                </svg>
             </div>
         </div>
+    </section>
 
-        <div class="arrow">
-            <svg class="icon icon--md" data-scrolly="slideDown">
-                <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-        </div>
-    </div>
-</section>
+    <section class="about" id="about">
+        <div class="wrapper">
+            <div class="photo" data-component="Circle">
+                <div class="circle" data-scrolly="rollFromLeft">
+                    <div class="photo-media">
+                        <img src="./assets/images/Image_Pro_Crop.png" />
+                    </div>
 
-<section class="about" id="about">
-    <div class="wrapper">
-        <div class="photo" data-component="Circle">
-            <div class="circle" data-scrolly="rollFromLeft">
-                <div class="photo-media">
-                    <img src="./assets/images/Image_Pro_Crop.png" />
-                </div>
-
-                <div class="text-circle">
-                    <h2>Antoine Samson - Développeur web junior -</h2>
-                </div>
-            </div>
-        </div>
-
-        <h4 class="description" data-scrolly="fromBottom">
-            J’ai de bonnes compétences en HTML/CSS et l’entraide est une valeur importante pour moi, ce qui fait que j’aime aider les gens à analyser leur
-            projet, trouver le problème et le résoudre.
-        </p>
-
-        <div class="video-container">
-            <h2  data-scrolly="fromLeft">Voir ma vidéo de présentation</h2>
-
-            <div class="video" data-component="Youtube" data-video-id="JSphqB5VRwo"  data-scrolly="fromRight">
-                <div class="video__media js-video">
-                    <img class="js-poster" src="assets/images/thumbnail.png" alt="Vue d'une montagne sur coucher de soleil" />
-                    <svg class="icon icon--xl">
-                        <use xlink:href="#icon-play"></use>
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        <div class="cards-infos">
-            <div class="card-info card-info-left" data-scrolly="fromRight">
-                <h2>Mes compétences</h2>
-                <div class="card-info-content">
-                    <p class="left">Intégration web</p>
-                    <p class="right">Développement web</p>
-                    <p class="left">Résolution de problèmes</p>
-                    <p class="right">Analyse logique</p>
+                    <div class="text-circle">
+                        <h2>Antoine Samson - Développeur web junior -</h2>
+                    </div>
                 </div>
             </div>
 
-            <div class="card-info card-info-right" data-scrolly="fromLeft">
-                <h2>Logiciels et langages</h2>
-                <div class="card-info-content">
-                    <p class="left">Visual Studio Code</p>
-                    <p class="right">HTML</p>
-                    <p class="left">Javascript</p>
-                    <p class="right">CSS</p>
-                </div>
-            </div>
+            <h4 class="description" data-scrolly="fromBottom">
+                J’ai de bonnes compétences en HTML/CSS et l’entraide est une valeur importante pour moi, ce qui fait que j’aime aider les gens à analyser leur
+                projet, trouver le problème et le résoudre.
+                </p>
 
-            <div class="card-info card-info-left" data-scrolly="fromRight">
-                <h2>Mes qualités</h2>
-                <div class="card-info-content">
-                    <p class="left">Empathique</p>
-                    <p class="right">Patient</p>
-                    <p class="left">Ouvert à la critique</p>
-                    <p class="right">Ouvert aux idées</p>
-                </div>
-            </div>
+                <div class="video-container">
+                    <h2 data-scrolly="fromLeft">Voir ma vidéo de présentation</h2>
 
-            <div class="card-info card-info-right" data-scrolly="fromLeft">
-                <h2>Mes intérêts</h2>
-                <div class="card-info-content">
-                    <p class="left">Les jeux-vidéo</p>
-                    <p class="right">L'art</p>
-                    <p class="left">La nourriture</p>
-                    <p class="right">Les mêmes</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <div class="wrapper">
-        <div class="contact-title" data-scrolly="fromBottom">
-            <h2>Vous souhaitez me contacter?</h2>
-            <h2>C'est par ici!</h2>
-        </div>
-        <div class="infos-form" data-scrolly="fromLeft">
-            <div class="infos">
-                <div class="contact-mail">
-                    <h3>Adresse Courriel</h3>
-                    <a class="link-mail" href="mailto:antoinesamson.developpeur@gmail.com ">antoinesamson.developpeur@gmail.com</a>
-                </div>
-
-                <div class="contact-phone">
-                    <h3>Téléphone</h3>
-                    <a class="link-phone" href="Tel: 438-377-6621 ">438-377-6621</a>
-                </div>
-
-                <div class="sociaux">
-                    <h3>Réseaux sociaux</h3>
-                    <div class="icons-sociaux">
-                        <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-linkedin"></use>
+                    <div class="video" data-component="Youtube" data-video-id="JSphqB5VRwo" data-scrolly="fromRight">
+                        <div class="video__media js-video">
+                            <img class="js-poster" src="assets/images/thumbnail.png" alt="Vue d'une montagne sur coucher de soleil" />
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-play"></use>
                             </svg>
-                        </a>
-                        <a class="social" href="https://github.com/antoinesamson" target="_blank">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-github"></use>
-                            </svg>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
-                <a class="button" href="./assets/CV.pdf" target="_blank">Mon cv</a>
+                <div class="cards-infos">
+                    <div class="card-info card-info-left" data-scrolly="fromRight">
+                        <h2>Mes compétences</h2>
+                        <div class="card-info-content">
+                            <p class="left">Intégration web</p>
+                            <p class="right">Développement web</p>
+                            <p class="left">Résolution de problèmes</p>
+                            <p class="right">Analyse logique</p>
+                        </div>
+                    </div>
+
+                    <div class="card-info card-info-right" data-scrolly="fromLeft">
+                        <h2>Logiciels et langages</h2>
+                        <div class="card-info-content">
+                            <p class="left">Visual Studio Code</p>
+                            <p class="right">HTML</p>
+                            <p class="left">Javascript</p>
+                            <p class="right">CSS</p>
+                        </div>
+                    </div>
+
+                    <div class="card-info card-info-left" data-scrolly="fromRight">
+                        <h2>Mes qualités</h2>
+                        <div class="card-info-content">
+                            <p class="left">Empathique</p>
+                            <p class="right">Patient</p>
+                            <p class="left">Ouvert à la critique</p>
+                            <p class="right">Ouvert aux idées</p>
+                        </div>
+                    </div>
+
+                    <div class="card-info card-info-right" data-scrolly="fromLeft">
+                        <h2>Mes intérêts</h2>
+                        <div class="card-info-content">
+                            <p class="left">Les jeux-vidéo</p>
+                            <p class="right">L'art</p>
+                            <p class="left">La nourriture</p>
+                            <p class="right">Les mêmes</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <div class="contact-title" data-scrolly="fromBottom">
+                <h2>Vous souhaitez me contacter?</h2>
+                <h2>C'est par ici!</h2>
+            </div>
+            <div class="infos-form" data-scrolly="fromLeft">
+                <div class="infos">
+                    <div class="contact-mail">
+                        <h3>Adresse Courriel</h3>
+                        <a class="link-mail" href="mailto:antoinesamson.developpeur@gmail.com ">antoinesamson.developpeur@gmail.com</a>
+                    </div>
+
+                    <div class="contact-phone">
+                        <h3>Téléphone</h3>
+                        <a class="link-phone" href="Tel: 438-377-6621 ">438-377-6621</a>
+                    </div>
+
+                    <div class="sociaux">
+                        <h3>Réseaux sociaux</h3>
+                        <div class="icons-sociaux">
+                            <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                            <a class="social" href="https://github.com/antoinesamson" target="_blank">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-github"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a class="button" href="./assets/CV.pdf" target="_blank">Mon cv</a>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="form" autocomplete="off">
+                    <div class="form__body" data-scrolly="fromRight">
+                        <input type="hidden" name="access_key" value="6b838308-20d0-4ad6-9232-aabb20e54b2e">
+                        <fieldset class="grid">
+
+                            <div class="input">
+                                <label class="input__label" for="name">Votre nom*</label>
+                                <input class="input__element" type="text" name="" id="name" placeholder="Jean-Eude" required />
+                            </div>
+
+                            <div class="input">
+                                <label class="input__label" for="email">Votre adresse courriel*</label>
+                                <input class="input__element" type="email" name="email" id="email" placeholder="Jean-Eude@comtedelarocheliere.com" required />
+
+                                <div class="error_info">Veuillez entrer une adresse courriel valide</div>
+                            </div>
+
+                            <div class="input textarea">
+                                <label class="input__label" for="message">Message*</label>
+                                <textarea class="input__element" name="message" id="message" maxlength="500" placeholder="Que souhaitez-vous me dire?" required></textarea>
+                                <div class="error_info">Veuillez entrer votre message ici</div>
+                            </div>
+                        </fieldset>
+
+                        <footer class="form__footer"><button class="button">Envoyer</button></footer>
+
+                    </div>
+
+                    <div class="form__confirmation">
+                        <h2>Merci beaucoup</h2>
+                        <p>Votre message a bien été reçu. Je vous répondrai bientôt!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+
+            <p class="copyrights">Antoine Samson © Tous droits réservés</p>
+
+            <div class="sociaux">
+                <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg></a>
+                <a class="social" href="https://github.com/antoinesamson" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
             </div>
 
-            <form  action="https://api.web3forms.com/submit" method="POST" class="form" autocomplete="off" >
-                <div class="form__body" data-scrolly="fromRight">
-                    <input type="hidden" name="access_key" value="6b838308-20d0-4ad6-9232-aabb20e54b2e">
-                    <fieldset class="grid">
-                        
-                        <div class="input">
-                            <label class="input__label" for="name">Votre nom*</label>
-                            <input class="input__element" type="text" name="" id="name" placeholder="Jean-Eude" required />
-                        </div>
 
-                        <div class="input">
-                            <label class="input__label" for="email">Votre adresse courriel*</label>
-                            <input class="input__element" type="email" name="email" id="email" placeholder="Jean-Eude@comtedelarocheliere.com" required />
-
-                            <div class="error_info">Veuillez entrer une adresse courriel valide</div>
-                        </div>
-
-                        <div class="input textarea">
-                            <label class="input__label" for="message">Message*</label>
-                            <textarea
-                                class="input__element"
-                                name="message"
-                                id="message"
-                                maxlength="500"
-                                placeholder="Que souhaitez-vous me dire?"
-                                required
-                            ></textarea>
-                            <div class="error_info">Veuillez entrer votre message ici</div>
-                        </div>
-                    </fieldset>
-
-                    <footer class="form__footer"><button class="button">Envoyer</button></footer>
-                    
-                </div>
-
-                <div class="form__confirmation">
-                    <h2>Merci beaucoup</h2>
-                    <p>Votre message a bien été reçu. Je vous répondrai bientôt!</p>
-                </div>
-            </form>
         </div>
-    </div>
-</section>
+    </footer>
 
-
-<footer class="footer">
-    <div class="wrapper">
-
-        <p class="copyrights">Antoine Samson © Tous droits réservés</p>
-
-        <div class="sociaux">
-            <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank"><svg class="icon icon--md">
-                <use xlink:href="#icon-linkedin"></use>
-            </svg></a>
-            <a class="social" href="https://github.com/antoinesamson" target="_blank"><svg class="icon icon--md">
-                <use xlink:href="#icon-github"></use>
-            </svg></a>
-        </div>
-
-
-    </div>
-</footer>
-    
 
 </body>
-</html>
 
-<!--{% include "_includes/_footer.html" %} -->
+</html>

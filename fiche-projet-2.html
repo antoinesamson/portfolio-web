@@ -1,125 +1,177 @@
-{% include "_partials/_header.html" %}
+<!DOCTYPE html>
+<html lang="fr">
 
-<section class="project-hero" data-scrolly="fromBottom">
-    <div class="wrapper">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antoine Samson | Portfolio</title>
 
-        <div class="project-details">
+    <link rel="icon" type="image/svg" href="./assets/favicons/portfolio-favicon.svg">
 
-            <div class="card-details">
-                <div class="details-content">
-                    <h2>Timconf</h2>
-                    <p>Projet scolaire</p>
-                    <p>Intégration Web & Design</p>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body data-component="Scrolly" data-no-repeat>
+    <canvas id="canvas" data-component="Background">Le canvas ne fonctionne pas</canvas>
+
+    <header class="header" data-component="Header">
+        <div class="wrapper">
+            <div class="menu">
+                <a class="logo" href="index.html#hero">
+                    <h5>AS</h5>
+                    <h5 class="hover">AS</h5>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">
+                                <div>À propos</div>
+                                <div class="hover">À propos</div>
+                            </a></li>
+                        <li><a href="projets.html">
+                                <div>Projets</div>
+                                <div class="hover">Projets</div>
+                            </a></li>
+                        <li><a href="index.html#contact">
+                                <div>Contact</div>
+                                <div class="hover">Contact</div>
+                            </a></li>
+                    </ul>
+                </nav>
+
+                <div class="toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                
-                <div class="details-icons">
+            </div>
+        </div>
+    </header>
 
-                    <div class="details-icon">
-                        <svg class="icon">
-                            <use xlink:href="#icon-html5"></use>
-                        </svg>
+    <div class="cursor" id="cursor" data-component="Cursor"></div>
+
+
+    <section class="project-hero" data-scrolly="fromBottom">
+        <div class="wrapper">
+
+            <div class="project-details">
+
+                <div class="card-details">
+                    <div class="details-content">
+                        <h2>Timconf</h2>
+                        <p>Projet scolaire</p>
+                        <p>Intégration Web & Design</p>
                     </div>
 
+                    <div class="details-icons">
+
+                        <div class="details-icon">
+                            <svg class="icon">
+                                <use xlink:href="#icon-html5"></use>
+                            </svg>
+                        </div>
 
 
-                    <div class="details-icon">
-                        <svg class="icon">
-                            <use xlink:href="#icon-css"></use>
-                        </svg>
-                    </div>
+
+                        <div class="details-icon">
+                            <svg class="icon">
+                                <use xlink:href="#icon-css"></use>
+                            </svg>
+                        </div>
 
 
 
-                    <div class="details-icon">
-                        <svg class="icon">
-                            <use xlink:href="#icon-javascript"></use>
-                        </svg>
+                        <div class="details-icon">
+                            <svg class="icon">
+                                <use xlink:href="#icon-javascript"></use>
+                            </svg>
+                        </div>
+
                     </div>
 
                 </div>
+
+                <a class="button" href="./sites_portfolio/timconf" target="_blank">Visiter le site</a>
 
             </div>
 
-            <a class="button" href="./sites_portfolio/timconf" target="_blank">Visiter le site</a>
+
+
+
+            <div class="demoreel"> <img src="assets/images/projet2.png"> </div>
 
         </div>
+    </section>
 
-            
+    <section class="project-categories">
 
+        <div class="wrapper">
 
-        <div class="demoreel"> <img src="assets/images/projet2.png"> </div>
+            <div class="main-category" data-scrolly="fromBottom">
+                <h2>Résumé et crédits</h2>
+                <p>Ce projet avait pour but de tester nos compétences en HTML CSS et Javascript avec des notions que nous avions appris au cours de la session
+                    en reproduisant une maquette d'un site web pour une convention fictive organisée par la TIM
+                    qui a pour thème un des aspects du multimédia (Développement web, Production vidéo, Design, Montage sonore, etc... )</p>
 
-    </div>
-</section>
-
-<section class="project-categories">
-
-    <div class="wrapper">
-
-    <div class="main-category" data-scrolly="fromBottom">
-        <h2>Résumé et crédits</h2>
-        <p>Ce projet avait pour but de tester nos compétences en HTML CSS et Javascript avec des notions que nous avions appris au cours de la session
-            en reproduisant une maquette d'un site web pour une convention fictive organisée par la TIM
-            qui a pour thème un des aspects du multimédia (Développement web, Production vidéo, Design, Montage sonore, etc... )</p>
-
-            <p>Pour ce projet, j'ai réalisé la maquette figma dans un cours précédent de design et j'ai codé l'entièreté du HTML CSS et JS pour le site</p>
-    </div>
-
-
-    <div class="sub-category" data-scrolly="fromBottom">
-        <h2>Design du site web</h2>
-        <p>Tout bon site web commence par une maquette efficace. Durant le cours de design, j'ai commencé par intégrer le guide de style du site web en choissisant une palette de couleur et les polices d'écriture. 
-            Ensuite, il fallait construire sa propre version de la maquette en utilisant divers morceaux de wireframe fournis par la professeure. Pour finir, j'ai intégré les différents contenus du site web. 
-            Optant pour une thématique basée sur le montage vidéo.
-        </p>
-    </div>
-
-    <div class="cards-modale" data-component="Modal"  data-scrolly="fromBottom">
-
-        <div class="card-modale card-modale-1">
-            
-            <div class="card-media">
-                <div class="card-hover">
-                    <span></span>
-                    <span class="plus-vertical"></span>
-                </div>
-                <img src="./assets/images/projet2/guide_styles.png">
+                <p>Pour ce projet, j'ai réalisé la maquette figma dans un cours précédent de design et j'ai codé l'entièreté du HTML CSS et JS pour le site</p>
             </div>
 
-            <div class="card-title">
-                <h3>Guide de styles</h3>
+
+            <div class="sub-category" data-scrolly="fromBottom">
+                <h2>Design du site web</h2>
+                <p>Tout bon site web commence par une maquette efficace. Durant le cours de design, j'ai commencé par intégrer le guide de style du site web en choissisant une palette de couleur et les polices d'écriture.
+                    Ensuite, il fallait construire sa propre version de la maquette en utilisant divers morceaux de wireframe fournis par la professeure. Pour finir, j'ai intégré les différents contenus du site web.
+                    Optant pour une thématique basée sur le montage vidéo.
+                </p>
             </div>
 
-            </div>
-            
-            <dialog class="modale-window modale-window-1">
-                <div class="modale-media">
-                    <img src="./assets/images/projet2/guide_styles.png">
-                    <h2 class="x">X</h4>
-                </div>
+            <div class="cards-modale" data-component="Modal" data-scrolly="fromBottom">
 
-                <div class="modale-media-mobile">
-                    <img src="./assets/images/projet2/guide_styles_mobile.png">
-                    <h2 class="x">X</h4>
-                </div>
-            </dialog>
+                <div class="card-modale card-modale-1">
 
-            <div class="card-modale card-modale-2">
-            
-                <div class="card-media">
-                    <div class="card-hover">
-                        <span></span>
-                        <span class="plus-vertical"></span>
+                    <div class="card-media">
+                        <div class="card-hover">
+                            <span></span>
+                            <span class="plus-vertical"></span>
+                        </div>
+                        <img src="./assets/images/projet2/guide_styles.png">
                     </div>
-                    <img src="./assets/images/projet2/wireframes.png">
+
+                    <div class="card-title">
+                        <h3>Guide de styles</h3>
+                    </div>
+
                 </div>
-    
-                <div class="card-title">
-                    <h3>Wireframes</h3>
+
+                <dialog class="modale-window modale-window-1">
+                    <div class="modale-media">
+                        <img src="./assets/images/projet2/guide_styles.png">
+                        <h2 class="x">X</h4>
+                    </div>
+
+                    <div class="modale-media-mobile">
+                        <img src="./assets/images/projet2/guide_styles_mobile.png">
+                        <h2 class="x">X</h4>
+                    </div>
+                </dialog>
+
+                <div class="card-modale card-modale-2">
+
+                    <div class="card-media">
+                        <div class="card-hover">
+                            <span></span>
+                            <span class="plus-vertical"></span>
+                        </div>
+                        <img src="./assets/images/projet2/wireframes.png">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Wireframes</h3>
+                    </div>
+
                 </div>
-    
-                </div>
-                
+
                 <dialog class="modale-window modale-window-2">
                     <div class="modale-media">
                         <img src="./assets/images/projet2/wireframes.png">
@@ -133,7 +185,7 @@
                 </dialog>
 
                 <div class="card-modale card-modale-3">
-            
+
                     <div class="card-media">
                         <div class="card-hover">
                             <span></span>
@@ -141,151 +193,172 @@
                         </div>
                         <img src="./assets/images/projet2/maquette.png">
                     </div>
-        
+
                     <div class="card-title">
                         <h3>Maquette finale</h3>
                     </div>
-        
-                    </div>
-                    
-                    <dialog class="modale-window modale-window-3">
-                        <div class="modale-media">
-                            <img src="./assets/images/projet2/maquette.png">
-                            <h2 class="x">X</h4>
-                        </div>
-
-                        <div class="modale-media-mobile">
-                            <img src="./assets/images/projet2/maquette_mobile.png">
-                            <h2 class="x">X</h4>
-                        </div>
-                    </dialog>
-
-    </div>
-
-    
-
-    <div class="sub-category" data-scrolly="fromBottom">
-        <h2>Page d'accueil</h2>
-        <p>C'est dans la page d'accueil que les éléments principaux de la conférence sont présentés. Une grille de cartes présente les conférenciers présents à l'évènement,
-            une seconde grille présente les différents forfaits disponible à l'achat pour participer à cet évènement et un carousel montre les différents partenaires qui financent l'évènement.
-        </p>
-    </div>
-
-    <div class="accordions" data-component="Accordion" data-scrolly="fromBottom">
-
-        <div class="accordion js-accordion">
-            <div class="accordion-title">
-                <h2>Voir les conférenciers</h2>
-
-                <svg class="icon">
-                    <use xlink:href="#icon-chevron-down"></use>
-                </svg>
-            </div>
-
-            <div class="accordion-media">
-                <img src="./assets/images/projet2/grid_conferenciers.png">
-            </div>
-
-            <div class="accordion-media-mobile">
-                <img src="./assets/images/projet2/grid_conferenciers_mobile.png">
-            </div>
-        </div>
-
-        <div class="accordion js-accordion">
-            <div class="accordion-title">
-                <h2>Voir les forfaits</h2>
-
-                <svg class="icon">
-                    <use xlink:href="#icon-chevron-down"></use>
-                </svg>
-            </div>
-
-            <div class="accordion-media">
-                <img src="./assets/images/projet2/grid_forfaits.png">
-            </div>
-
-            <div class="accordion-media-mobile">
-                <img src="./assets/images/projet2/grid_forfaits_mobile.png">
-            </div>
-        </div>
-
-        <div class="accordion js-accordion">
-            <div class="accordion-title">
-                <h2>Voir les partenaires</h2>
-
-                <svg class="icon">
-                    <use xlink:href="#icon-chevron-down"></use>
-                </svg>
-            </div>
-
-            <div class="accordion-media">
-                <img src="./assets/images/projet2/partners.png">
-            </div>
-
-            <div class="accordion-media-mobile">
-                <img src="./assets/images/projet2/partners_mobile.png">
-            </div>
-        </div>
-
-    </div>
-
-    <div class="sub-category" data-scrolly="fromBottom">
-        <h2>Page d'un conférencier</h2>
-        <p>Cliquer sur un conférencier emmène l'utilisateur sur sa page. Pour ce projet, il fallait faire une page pour un des conférenciers de notre choix. 
-            J'ai choisi Lixian car c'est une personne que j'admire. Les sections de cette page sont un peu plus expérimentales que la page d'accueil avec une page de présentation dont les informations débordent sur le hero
-        ainsi qu'une galerie photo avec différente taille d'élément de grille pour chaque photo. Ensuite, il y a un carousel présentant les autres évènements ainsi qu'un carousel montrant les cartes des autres conférenciers</p>
-    </div>
-
-    
-
-        <div class="swiper swiper-card-full-img" data-component="Carousel" data-slides data-scrolly="fromBottom">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="swiper-slide">
-                    
-                    <div class="card-carousel card-carousel-full-img">
-                        <div class="card-media">
-                            <img src="assets/images/projet2/infos_conf.png">
-                        </div>
-                        <div class="card-content">
-                            <h3>Informations du conférencier</h3>
-                        </div>
-                    </div>
 
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="card-carousel card-carousel-full-img">
-                        <div class="card-media">
-                            <img src="assets/images/projet2/swiper_events.png">
-                        </div>
-                        <div class="card-content">
-                            <h3>Carousel des évènements</h3>
-                        </div>
+                <dialog class="modale-window modale-window-3">
+                    <div class="modale-media">
+                        <img src="./assets/images/projet2/maquette.png">
+                        <h2 class="x">X</h4>
+                    </div>
+
+                    <div class="modale-media-mobile">
+                        <img src="./assets/images/projet2/maquette_mobile.png">
+                        <h2 class="x">X</h4>
+                    </div>
+                </dialog>
+
+            </div>
+
+
+
+            <div class="sub-category" data-scrolly="fromBottom">
+                <h2>Page d'accueil</h2>
+                <p>C'est dans la page d'accueil que les éléments principaux de la conférence sont présentés. Une grille de cartes présente les conférenciers présents à l'évènement,
+                    une seconde grille présente les différents forfaits disponible à l'achat pour participer à cet évènement et un carousel montre les différents partenaires qui financent l'évènement.
+                </p>
+            </div>
+
+            <div class="accordions" data-component="Accordion" data-scrolly="fromBottom">
+
+                <div class="accordion js-accordion">
+                    <div class="accordion-title">
+                        <h2>Voir les conférenciers</h2>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-down"></use>
+                        </svg>
+                    </div>
+
+                    <div class="accordion-media">
+                        <img src="./assets/images/projet2/grid_conferenciers.png">
+                    </div>
+
+                    <div class="accordion-media-mobile">
+                        <img src="./assets/images/projet2/grid_conferenciers_mobile.png">
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="card-carousel card-carousel-full-img">
-                        <div class="card-media">
-                            <img src="assets/images/projet2/swiper_conf.png">
-                        </div>
-                        <div class="card-content">
-                            <h3>Carousel des conférenciers</h3>
-                        </div>
+
+                <div class="accordion js-accordion">
+                    <div class="accordion-title">
+                        <h2>Voir les forfaits</h2>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-down"></use>
+                        </svg>
+                    </div>
+
+                    <div class="accordion-media">
+                        <img src="./assets/images/projet2/grid_forfaits.png">
+                    </div>
+
+                    <div class="accordion-media-mobile">
+                        <img src="./assets/images/projet2/grid_forfaits_mobile.png">
+                    </div>
+                </div>
+
+                <div class="accordion js-accordion">
+                    <div class="accordion-title">
+                        <h2>Voir les partenaires</h2>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-down"></use>
+                        </svg>
+                    </div>
+
+                    <div class="accordion-media">
+                        <img src="./assets/images/projet2/partners.png">
+                    </div>
+
+                    <div class="accordion-media-mobile">
+                        <img src="./assets/images/projet2/partners_mobile.png">
                     </div>
                 </div>
 
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+
+            <div class="sub-category" data-scrolly="fromBottom">
+                <h2>Page d'un conférencier</h2>
+                <p>Cliquer sur un conférencier emmène l'utilisateur sur sa page. Pour ce projet, il fallait faire une page pour un des conférenciers de notre choix.
+                    J'ai choisi Lixian car c'est une personne que j'admire. Les sections de cette page sont un peu plus expérimentales que la page d'accueil avec une page de présentation dont les informations débordent sur le hero
+                    ainsi qu'une galerie photo avec différente taille d'élément de grille pour chaque photo. Ensuite, il y a un carousel présentant les autres évènements ainsi qu'un carousel montrant les cartes des autres conférenciers</p>
             </div>
-            
-        
+
+
+
+            <div class="swiper swiper-card-full-img" data-component="Carousel" data-slides data-scrolly="fromBottom">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+
+                        <div class="card-carousel card-carousel-full-img">
+                            <div class="card-media">
+                                <img src="assets/images/projet2/infos_conf.png">
+                            </div>
+                            <div class="card-content">
+                                <h3>Informations du conférencier</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-carousel card-carousel-full-img">
+                            <div class="card-media">
+                                <img src="assets/images/projet2/swiper_events.png">
+                            </div>
+                            <div class="card-content">
+                                <h3>Carousel des évènements</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-carousel card-carousel-full-img">
+                            <div class="card-media">
+                                <img src="assets/images/projet2/swiper_conf.png">
+                            </div>
+                            <div class="card-content">
+                                <h3>Carousel des conférenciers</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
 
 
-{% include "_partials/_footer.html" %}
+    <footer class="footer">
+        <div class="wrapper">
+
+            <p class="copyrights">Antoine Samson © Tous droits réservés</p>
+
+            <div class="sociaux">
+                <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg></a>
+                <a class="social" href="https://github.com/antoinesamson" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

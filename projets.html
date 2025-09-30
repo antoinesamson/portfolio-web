@@ -1,81 +1,154 @@
-{% include "_partials/_header.html" %}
+<!DOCTYPE html>
+<html lang="fr">
 
-<section class="projects">
-    <div class="wrapper">
-        <h1>Projets</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antoine Samson | Portfolio</title>
 
-        <div class="cards-projects">
-            <div class="card-project card-right" data-scrolly="fromLeft">
-                <div class="card-media">
-                    <img src="./assets/images/projet1.png" />
-                </div>
+    <link rel="icon" type="image/svg" href="./assets/favicons/portfolio-favicon.svg">
 
-                <div class="card-hover">
-                    <h2>Baie Ste-Catherine</h2>
-                    <h4>Refonte de site web</h4>
-                    <p>Html, Css, Javascript</p>
 
-                    <a class="button hover-button" href="fiche-projet.html">Voir le projet</a>
-                </div>
-            </div>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
 
-            <div class="card-project card-left" data-scrolly="fromRight">
-                <div class="card-media">
-                    <img src="./assets/images/projet2.png" />
-                </div>
+<body data-component="Scrolly" data-no-repeat>
+    <canvas id="canvas" data-component="Background">Le canvas ne fonctionne pas</canvas>
 
-                <div class="card-hover">
-                    <h2>Timconf</h2>
-                    <h4>Site de conférence fictive</h4>
-                    <p>Html, Css, Javascript</p>
+    <header class="header" data-component="Header">
+        <div class="wrapper">
+            <div class="menu">
+                <a class="logo" href="index.html#hero">
+                    <h5>AS</h5>
+                    <h5 class="hover">AS</h5>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">
+                                <div>À propos</div>
+                                <div class="hover">À propos</div>
+                            </a></li>
+                        <li><a href="projets.html">
+                                <div>Projets</div>
+                                <div class="hover">Projets</div>
+                            </a></li>
+                        <li><a href="index.html#contact">
+                                <div>Contact</div>
+                                <div class="hover">Contact</div>
+                            </a></li>
+                    </ul>
+                </nav>
 
-                    <a class="button hover-button" href="fiche-projet-2.html">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="card-project card-right" data-scrolly="fromLeft">
-                <div class="card-media">
-                    <img src="./assets/images/projet3.png" />
-                </div>
-
-                <div class="card-hover">
-                    
-                        <h2>Morphix</h2>
-                        <h4>Site web de transports fictif</h4>
-                        <p>Html, Css, Javascript, Wordpress</p>
-                    <a class="button hover-button" href="fiche-projet-3.html">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="card-project card-left" data-scrolly="fromRight">
-                <div class="card-media">
-                    <img src="./assets/images/projet4.png" />
-                </div>
-
-                <div class="card-hover">
-                    <h2>A.T.H.Y.M</h2>
-                    <h4>Site web de cuisine fictif</h4>
-                    <p>Html, Css, Php</p>
-
-                    <a class="button hover-button" href="fiche-projet-4.html">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="card-project card-right" data-scrolly="fromLeft">
-                <div class="card-media">
-                    <img src="./assets/images/projet5.png" />
-                </div>
-
-                <div class="card-hover">
-                    <h2>e.tim</h2>
-                    <h4>Site pour équipe e.sport fictive</h4>
-                    <p>Html, Css, Javascript</p>
-
-                    <a class="button hover-button" href="fiche-projet-5.html">Voir le projet</a>
+                <div class="toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-{% include "_partials/_footer.html" %}
+    <div class="cursor" id="cursor" data-component="Cursor"></div>
+
+
+    <section class="projects">
+        <div class="wrapper">
+            <h1>Projets</h1>
+
+            <div class="cards-projects">
+                <div class="card-project card-right" data-scrolly="fromLeft">
+                    <div class="card-media">
+                        <img src="./assets/images/projet1.png" />
+                    </div>
+
+                    <div class="card-hover">
+                        <h2>Baie Ste-Catherine</h2>
+                        <h4>Refonte de site web</h4>
+                        <p>Html, Css, Javascript</p>
+
+                        <a class="button hover-button" href="fiche-projet.html">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="card-project card-left" data-scrolly="fromRight">
+                    <div class="card-media">
+                        <img src="./assets/images/projet2.png" />
+                    </div>
+
+                    <div class="card-hover">
+                        <h2>Timconf</h2>
+                        <h4>Site de conférence fictive</h4>
+                        <p>Html, Css, Javascript</p>
+
+                        <a class="button hover-button" href="fiche-projet-2.html">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="card-project card-right" data-scrolly="fromLeft">
+                    <div class="card-media">
+                        <img src="./assets/images/projet3.png" />
+                    </div>
+
+                    <div class="card-hover">
+
+                        <h2>Morphix</h2>
+                        <h4>Site web de transports fictif</h4>
+                        <p>Html, Css, Javascript, Wordpress</p>
+                        <a class="button hover-button" href="fiche-projet-3.html">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="card-project card-left" data-scrolly="fromRight">
+                    <div class="card-media">
+                        <img src="./assets/images/projet4.png" />
+                    </div>
+
+                    <div class="card-hover">
+                        <h2>A.T.H.Y.M</h2>
+                        <h4>Site web de cuisine fictif</h4>
+                        <p>Html, Css, Php</p>
+
+                        <a class="button hover-button" href="fiche-projet-4.html">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="card-project card-right" data-scrolly="fromLeft">
+                    <div class="card-media">
+                        <img src="./assets/images/projet5.png" />
+                    </div>
+
+                    <div class="card-hover">
+                        <h2>e.tim</h2>
+                        <h4>Site pour équipe e.sport fictive</h4>
+                        <p>Html, Css, Javascript</p>
+
+                        <a class="button hover-button" href="fiche-projet-5.html">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+
+            <p class="copyrights">Antoine Samson © Tous droits réservés</p>
+
+            <div class="sociaux">
+                <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg></a>
+                <a class="social" href="https://github.com/antoinesamson" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

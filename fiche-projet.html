@@ -1,121 +1,173 @@
-{% include "_partials/_header.html" %}
+<!DOCTYPE html>
+<html lang="fr">
 
-<section class="project-hero" data-scrolly="fromBottom">
-    <div class="wrapper">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antoine Samson | Portfolio</title>
 
-        <div class="project-details">
+    <link rel="icon" type="image/svg" href="./assets/favicons/portfolio-favicon.svg">
 
-            <div class="card-details">
-                <div class="details-content">
-                    <h2>Baie Ste-Catherine</h2>
-                    <p>Projet scolaire</p>
-                    <p>Intégration Web</p>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body data-component="Scrolly" data-no-repeat>
+    <canvas id="canvas" data-component="Background">Le canvas ne fonctionne pas</canvas>
+
+    <header class="header" data-component="Header">
+        <div class="wrapper">
+            <div class="menu">
+                <a class="logo" href="index.html#hero">
+                    <h5>AS</h5>
+                    <h5 class="hover">AS</h5>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">
+                                <div>À propos</div>
+                                <div class="hover">À propos</div>
+                            </a></li>
+                        <li><a href="projets.html">
+                                <div>Projets</div>
+                                <div class="hover">Projets</div>
+                            </a></li>
+                        <li><a href="index.html#contact">
+                                <div>Contact</div>
+                                <div class="hover">Contact</div>
+                            </a></li>
+                    </ul>
+                </nav>
+
+                <div class="toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                
-                <div class="details-icons">
+            </div>
+        </div>
+    </header>
 
-                    <div class="details-icon">
-                        <svg class="icon">
-                            <use xlink:href="#icon-html5"></use>
-                        </svg>
+    <div class="cursor" id="cursor" data-component="Cursor"></div>
+
+
+    <section class="project-hero" data-scrolly="fromBottom">
+        <div class="wrapper">
+
+            <div class="project-details">
+
+                <div class="card-details">
+                    <div class="details-content">
+                        <h2>Baie Ste-Catherine</h2>
+                        <p>Projet scolaire</p>
+                        <p>Intégration Web</p>
                     </div>
 
+                    <div class="details-icons">
+
+                        <div class="details-icon">
+                            <svg class="icon">
+                                <use xlink:href="#icon-html5"></use>
+                            </svg>
+                        </div>
 
 
-                    <div class="details-icon">
-                        <svg class="icon">
-                            <use xlink:href="#icon-css"></use>
-                        </svg>
-                    </div>
+
+                        <div class="details-icon">
+                            <svg class="icon">
+                                <use xlink:href="#icon-css"></use>
+                            </svg>
+                        </div>
 
 
 
-                    <div class="details-icon">
-                        <svg class="icon">
-                            <use xlink:href="#icon-javascript"></use>
-                        </svg>
+                        <div class="details-icon">
+                            <svg class="icon">
+                                <use xlink:href="#icon-javascript"></use>
+                            </svg>
+                        </div>
+
                     </div>
 
                 </div>
+
+                <a class="button" href="./sites_portfolio/baie-ste-catherine" target="_blank">Visiter le site</a>
 
             </div>
 
-            <a class="button" href="./sites_portfolio/baie-ste-catherine" target="_blank">Visiter le site</a>
+
+
+
+            <div class="demoreel"> <img src="assets/images/projet1.png"> </div>
 
         </div>
+    </section>
 
-            
+    <section class="project-categories">
 
+        <div class="wrapper">
 
-        <div class="demoreel"> <img src="assets/images/projet1.png"> </div>
+            <div class="main-category" data-scrolly="fromBottom">
+                <h2>Résumé et crédits</h2>
+                <p>Le but principal de ce projet était de reproduire une maquette servant de refonte au site web de la ville de Baie Ste-Catherine afin de mettre en pratique
+                    la notion des composants Javascripts que nous avons appris à faire au cours de la session en créant par nous-même un composant supplémentaire</p>
 
-    </div>
-</section>
-
-<section class="project-categories">
-
-    <div class="wrapper">
-
-    <div class="main-category" data-scrolly="fromBottom">
-        <h2>Résumé et crédits</h2>
-        <p>Le but principal de ce projet était de reproduire une maquette servant de refonte au site web de la ville de  Baie Ste-Catherine afin de mettre en pratique 
-            la notion des composants Javascripts que nous avons appris à faire au cours de la session en créant par nous-même un composant supplémentaire</p>
-
-            <p>Pour ce projet, la maquette figma était fournie par le professeur et j'ai codé l'entièreté du Html, Css et Javascript pour le site web</p>
-    </div>
-    
-    <div class="sub-category" data-scrolly="fromBottom">
-        <h2>Processus</h2>
-        <p>Le design et la maquette étaient fournis par les professeurs. J’ai donc commencé par intégrer et classer  les contenus en HTML. Ensuite j’ai appliqué les styles en CSS, j’ai alterné entre Javascript et CSS 
-            pour intégrer correctement les composants demandés (Carousel, vidéo Youtube, Header) et j’ai fait le responsive pour m’assurer que tout restait visible peu importe la taille d’écran.</p>
-    </div>
-
-    <div class="cards-modale" data-component="Modal"  data-scrolly="fromBottom">
-
-        <div class="card-modale card-modale-1">
-            
-            <div class="card-media">
-                <div class="card-hover">
-                    <span></span>
-                    <span class="plus-vertical"></span>
-                </div>
-                <img src="./assets/images/projet1/component_youtube.png">
+                <p>Pour ce projet, la maquette figma était fournie par le professeur et j'ai codé l'entièreté du Html, Css et Javascript pour le site web</p>
             </div>
 
-            <div class="card-title">
-                <h3>Composant Youtube</h3>
+            <div class="sub-category" data-scrolly="fromBottom">
+                <h2>Processus</h2>
+                <p>Le design et la maquette étaient fournis par les professeurs. J’ai donc commencé par intégrer et classer les contenus en HTML. Ensuite j’ai appliqué les styles en CSS, j’ai alterné entre Javascript et CSS
+                    pour intégrer correctement les composants demandés (Carousel, vidéo Youtube, Header) et j’ai fait le responsive pour m’assurer que tout restait visible peu importe la taille d’écran.</p>
             </div>
 
-            </div>
-            
-            <dialog class="modale-window modale-window-1">
-                <div class="modale-media">
-                    <img src="./assets/images/projet1/component_youtube.png">
-                    <h2 class="x">X</h4>
-                </div>
+            <div class="cards-modale" data-component="Modal" data-scrolly="fromBottom">
 
-                <div class="modale-media-mobile">
-                    <img src="./assets/images/projet1/component_youtube_mobile.png">
-                    <h2 class="x">X</h4>
-                </div>
-            </dialog>
+                <div class="card-modale card-modale-1">
 
-            <div class="card-modale card-modale-2">
-            
-                <div class="card-media">
-                    <div class="card-hover">
-                        <span></span>
-                        <span class="plus-vertical"></span>
+                    <div class="card-media">
+                        <div class="card-hover">
+                            <span></span>
+                            <span class="plus-vertical"></span>
+                        </div>
+                        <img src="./assets/images/projet1/component_youtube.png">
                     </div>
-                    <img src="./assets/images/projet1/component_swiper.png">
+
+                    <div class="card-title">
+                        <h3>Composant Youtube</h3>
+                    </div>
+
                 </div>
-    
-                <div class="card-title">
-                    <h3>Composant Swiper</h3>
+
+                <dialog class="modale-window modale-window-1">
+                    <div class="modale-media">
+                        <img src="./assets/images/projet1/component_youtube.png">
+                        <h2 class="x">X</h4>
+                    </div>
+
+                    <div class="modale-media-mobile">
+                        <img src="./assets/images/projet1/component_youtube_mobile.png">
+                        <h2 class="x">X</h4>
+                    </div>
+                </dialog>
+
+                <div class="card-modale card-modale-2">
+
+                    <div class="card-media">
+                        <div class="card-hover">
+                            <span></span>
+                            <span class="plus-vertical"></span>
+                        </div>
+                        <img src="./assets/images/projet1/component_swiper.png">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Composant Swiper</h3>
+                    </div>
+
                 </div>
-    
-                </div>
-                
+
                 <dialog class="modale-window modale-window-2">
                     <div class="modale-media">
                         <img src="./assets/images/projet1/component_swiper.png">
@@ -129,7 +181,7 @@
                 </dialog>
 
                 <div class="card-modale card-modale-3">
-            
+
                     <div class="card-media">
                         <div class="card-hover">
                             <span></span>
@@ -137,149 +189,170 @@
                         </div>
                         <img src="./assets/images/projet1/component_accordion.png">
                     </div>
-        
+
                     <div class="card-title">
                         <h3>Composant Accordéon</h3>
                     </div>
-        
-                    </div>
-                    
-                    <dialog class="modale-window modale-window-3">
-                        <div class="modale-media">
-                            <img src="./assets/images/projet1/component_accordion.png">
-                            <h2 class="x">X</h4>
-                        </div>
 
-                        <div class="modale-media-mobile">
-                            <img src="./assets/images/projet1/component_accordion_mobile.png">
-                            <h2 class="x">X</h4>
-                        </div>
-                    </dialog>
-
-    </div>
-
-    
-
-    <div class="sub-category" data-scrolly="fromBottom">
-        <h2>Un nouveau composant?</h2>
-        <p>La plupart des composants utilisés dans le projets avaient été enseignés plus tôt dans la session pour nous permettre d’avoir du code réutilisable plus tard. Par contre, ce projet nous demandait 
-            de coder un composant de notre choix par nous-même. J’ai décidé de faire un composant accordéon qui fait apparaitre la réponse à une question lorsqu’on clique dessus</p>
-    </div>
-
-    <div class="accordions" data-component="Accordion" data-scrolly="fromBottom">
-
-        <div class="accordion js-accordion">
-            <div class="accordion-title">
-                <h2>Voir le HTML de l'accordéon</h2>
-
-                <svg class="icon">
-                    <use xlink:href="#icon-chevron-down"></use>
-                </svg>
-            </div>
-
-            <div class="accordion-media">
-                <img src="./assets/images/projet1/accordion_html.png">
-            </div>
-
-            <div class="accordion-media-mobile">
-                <img src="./assets/images/projet1/accordion_html_mobile.png">
-            </div>
-        </div>
-
-        <div class="accordion js-accordion">
-            <div class="accordion-title">
-                <h2>Voir le CSS de l'accordéon</h2>
-
-                <svg class="icon">
-                    <use xlink:href="#icon-chevron-down"></use>
-                </svg>
-            </div>
-
-            <div class="accordion-media">
-                <img src="./assets/images/projet1/accordion_css.png">
-            </div>
-
-            <div class="accordion-media-mobile">
-                <img src="./assets/images/projet1/accordion_css_mobile.png">
-            </div>
-        </div>
-
-        <div class="accordion js-accordion">
-            <div class="accordion-title">
-                <h2>Voir le Javascript de l'accordéon</h2>
-
-                <svg class="icon">
-                    <use xlink:href="#icon-chevron-down"></use>
-                </svg>
-            </div>
-
-            <div class="accordion-media">
-                <img src="./assets/images/projet1/accordion_js.png">
-            </div>
-
-            <div class="accordion-media-mobile">
-                <img src="./assets/images/projet1/accordion_js_mobile.png">
-            </div>
-        </div>
-
-    </div>
-
-    <div class="sub-category" data-scrolly="fromBottom">
-        <h2>L'organisation de mon projet</h2>
-        <p>Pour ce projet, j’ai adopté la méthode d’organisation de fichiers apprise à l’ATIM qui consiste à séparer les fichiers CSS dans différents dossiers selon leur fonction et à utiliser un fichier CSS pour chaque élément 
-            important dans le projet, puis de les importer dans un fichier principal. J’utilise aussi les partials pour répéter les éléments qui sont présents dans toutes les pages (Header, Footer)</p>
-    </div>
-
-    
-
-        <div class="swiper" data-component="Carousel" data-slides data-scrolly="fromBottom">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="swiper-slide">
-                    
-                    <div class="card-carousel">
-                        <div class="card-media">
-                            <img src="assets/images/projet1/files_organization.png">
-                        </div>
-                        <div class="card-content">
-                            <h3>Organisation des dossiers</h3>
-                        </div>
-                    </div>
- 
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="card-carousel">
-                        <div class="card-media">
-                            <img src="assets/images/projet1/css_organization.png">
-                        </div>
-                        <div class="card-content">
-                            <h3>Organisation du CSS</h3>
-                        </div>
+                <dialog class="modale-window modale-window-3">
+                    <div class="modale-media">
+                        <img src="./assets/images/projet1/component_accordion.png">
+                        <h2 class="x">X</h4>
+                    </div>
+
+                    <div class="modale-media-mobile">
+                        <img src="./assets/images/projet1/component_accordion_mobile.png">
+                        <h2 class="x">X</h4>
+                    </div>
+                </dialog>
+
+            </div>
+
+
+
+            <div class="sub-category" data-scrolly="fromBottom">
+                <h2>Un nouveau composant?</h2>
+                <p>La plupart des composants utilisés dans le projets avaient été enseignés plus tôt dans la session pour nous permettre d’avoir du code réutilisable plus tard. Par contre, ce projet nous demandait
+                    de coder un composant de notre choix par nous-même. J’ai décidé de faire un composant accordéon qui fait apparaitre la réponse à une question lorsqu’on clique dessus</p>
+            </div>
+
+            <div class="accordions" data-component="Accordion" data-scrolly="fromBottom">
+
+                <div class="accordion js-accordion">
+                    <div class="accordion-title">
+                        <h2>Voir le HTML de l'accordéon</h2>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-down"></use>
+                        </svg>
+                    </div>
+
+                    <div class="accordion-media">
+                        <img src="./assets/images/projet1/accordion_html.png">
+                    </div>
+
+                    <div class="accordion-media-mobile">
+                        <img src="./assets/images/projet1/accordion_html_mobile.png">
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="card-carousel">
-                        <div class="card-media">
-                            <img src="assets/images/projet1/components_organization.png">
-                        </div>
-                        <div class="card-content">
-                            <h3>Organisation des composants</h3>
-                        </div>
+
+                <div class="accordion js-accordion">
+                    <div class="accordion-title">
+                        <h2>Voir le CSS de l'accordéon</h2>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-down"></use>
+                        </svg>
+                    </div>
+
+                    <div class="accordion-media">
+                        <img src="./assets/images/projet1/accordion_css.png">
+                    </div>
+
+                    <div class="accordion-media-mobile">
+                        <img src="./assets/images/projet1/accordion_css_mobile.png">
+                    </div>
+                </div>
+
+                <div class="accordion js-accordion">
+                    <div class="accordion-title">
+                        <h2>Voir le Javascript de l'accordéon</h2>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-down"></use>
+                        </svg>
+                    </div>
+
+                    <div class="accordion-media">
+                        <img src="./assets/images/projet1/accordion_js.png">
+                    </div>
+
+                    <div class="accordion-media-mobile">
+                        <img src="./assets/images/projet1/accordion_js_mobile.png">
                     </div>
                 </div>
 
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+
+            <div class="sub-category" data-scrolly="fromBottom">
+                <h2>L'organisation de mon projet</h2>
+                <p>Pour ce projet, j’ai adopté la méthode d’organisation de fichiers apprise à l’ATIM qui consiste à séparer les fichiers CSS dans différents dossiers selon leur fonction et à utiliser un fichier CSS pour chaque élément
+                    important dans le projet, puis de les importer dans un fichier principal. J’utilise aussi les partials pour répéter les éléments qui sont présents dans toutes les pages (Header, Footer)</p>
             </div>
-            
-        
+
+
+
+            <div class="swiper" data-component="Carousel" data-slides data-scrolly="fromBottom">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+
+                        <div class="card-carousel">
+                            <div class="card-media">
+                                <img src="assets/images/projet1/files_organization.png">
+                            </div>
+                            <div class="card-content">
+                                <h3>Organisation des dossiers</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-carousel">
+                            <div class="card-media">
+                                <img src="assets/images/projet1/css_organization.png">
+                            </div>
+                            <div class="card-content">
+                                <h3>Organisation du CSS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-carousel">
+                            <div class="card-media">
+                                <img src="assets/images/projet1/components_organization.png">
+                            </div>
+                            <div class="card-content">
+                                <h3>Organisation des composants</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
 
 
-{% include "_partials/_footer.html" %}
+    <footer class="footer">
+        <div class="wrapper">
+
+            <p class="copyrights">Antoine Samson © Tous droits réservés</p>
+
+            <div class="sociaux">
+                <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg></a>
+                <a class="social" href="https://github.com/antoinesamson" target="_blank"><svg class="icon icon--md">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
