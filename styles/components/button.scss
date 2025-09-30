@@ -1,0 +1,46 @@
+.button {
+    color: var(--color-primary);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        var(--color-gradient1),
+        var(--color-gradient2)
+    );
+    max-height: 85px;
+    max-width: 310px;
+    padding: 20px 60px;
+    border-radius: 30px;
+    position: relative;
+
+    .button-background {
+        opacity: 0;
+        background-color: var(--color-bg-primary);
+        transition: opacity 0.4s ease-in;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &:hover {
+        color: var(--color-primary);
+
+        background-image: linear-gradient(
+            var(--color-bg-primary),
+            var(--color-bg-primary)
+        );
+    }
+}
+.hover-button {
+    background-image: linear-gradient(
+        var(--color-bg-secondary),
+        var(--color-bg-secondary)
+    );
+    border: 5px solid var(--color-bg-secondary);
+
+    &:hover {
+        background-image: none;
+    }
+}

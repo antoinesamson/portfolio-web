@@ -1,0 +1,17 @@
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: solid 5px var(--color-primary);
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 15;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        display: none;
+        }
+}

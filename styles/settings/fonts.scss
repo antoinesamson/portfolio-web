@@ -1,0 +1,20 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Signika Negative', sans-serif;
+    --font-secondary: 'Oxygen', sans-serif;
+    --font-logo: 'Saira Stencil One', sans-serif;
+
+    --font-size-content: #{typo(12px, 30px)};
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(64px, 148px)};
+    --font-size-h2: #{typo(24px, 48px)};
+    --font-size-h3: #{typo(22px, 32px)};
+    --font-size-h4: #{typo(18px, 24px)};
+    --font-size-CTA: #{typo(18px, 24px)};
+    --font-size-logo: #{typo(32px, 48px)};
+
+}

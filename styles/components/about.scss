@@ -1,0 +1,238 @@
+.about .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .wrapper .description {
+    padding: 0 100px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        padding: 0 20px;
+        }
+   
+}
+
+.photo{
+    width: 600px;
+    height: 600px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        height: 350px;
+        width: 350px;
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        height: 240px;
+        width: 240px;
+        }
+}
+
+.circle {
+    position: relative;
+
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+
+        margin: 0;
+        text-align: left;
+
+        @media screen and (max-width: $breakpoint-xs) {
+        
+            font-size: 20px;
+            }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        height: 350px;
+        width: 350px;
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        height: 240px;
+        width: 240px;
+        }
+
+}
+
+.photo-media {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+
+    img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        max-width: 290px;
+        max-height: 290px;
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        max-width: 190px;
+        max-height: 190px;
+        }
+}
+
+.text-circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+
+    
+}
+
+@keyframes rotateText
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+
+    110%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.text-circle span{
+   
+    position: absolute;
+    left: 50%;
+
+    transform-origin: 0 300px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        transform-origin: 0 175px;
+
+
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        transform-origin: 0 120px;
+
+
+        }
+
+    
+}
+
+.cards-infos {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 55px 40px;
+    width: 100%;
+
+    .card-info {
+        margin-bottom: 100px;
+        padding: 10px 80px;
+        border-radius: 50px;
+
+        p {
+            margin: 0;
+            margin-bottom: 35px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .card-info-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+        
+            grid-template-columns: 1fr;
+
+            .left{
+                text-align: center;
+            }
+            .right{
+                text-align: center;
+            }
+
+            }
+    }
+
+    .card-info-right {
+        grid-column-start: 3;
+        grid-column-end: 13;
+        box-shadow: 38px -38px 0 var(--color-bg-secondary);
+    }
+
+    .card-info-left {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        box-shadow: -38px -38px 0 var(--color-bg-secondary);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 55px 10px;
+
+        h2{
+            margin-bottom: 30px;
+        }
+
+        p.left,
+        p.right{
+            margin-bottom: 20px;
+        }
+        
+
+        .card-info-right {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            box-shadow: 0 0 0 var(--color-bg-secondary);
+        }
+    
+        .card-info-left {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            box-shadow:  0 0 0 var(--color-bg-secondary);
+        }
+        }
+}
+
+.card-info {
+    background-color: var(--color-bg-primary);
+}
+
+.icons-sociaux {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
