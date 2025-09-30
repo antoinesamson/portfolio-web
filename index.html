@@ -1,4 +1,48 @@
-{% include "_includes/_header.html" %}
+<!-- {% include "_includes/_header.html" %} -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Antoine Samson | Portfolio</title>
+
+        <link rel="icon" type="image/svg" href="./assets/favicons/portfolio-favicon.svg">
+
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Scrolly" data-no-repeat>
+        <canvas id="canvas" data-component="Background">Le canvas ne fonctionne pas</canvas>
+
+        <header class="header" data-component="Header">
+            <div class="wrapper">
+                <div class="menu">
+                <a class="logo" href="index.html#hero">
+                    <h5>AS</h5>
+                    <h5 class="hover">AS</h5>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about"><div>À propos</div><div class="hover">À propos</div></a></li>
+                        <li><a href="projets.html"><div>Projets</div><div class="hover">Projets</div></a></li>
+                        <li><a href="index.html#contact"><div>Contact</div><div class="hover">Contact</div></a></li>
+                    </ul>
+                </nav>
+
+                <div class="toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <div class="cursor" id="cursor" data-component="Cursor"></div>
+
 
 <section class="hero" id="hero" data-component="Parallax">
     <div class="wrapper">
@@ -183,4 +227,27 @@
     </div>
 </section>
 
-{% include "_includes/_footer.html" %}
+
+<footer class="footer">
+    <div class="wrapper">
+
+        <p class="copyrights">Antoine Samson © Tous droits réservés</p>
+
+        <div class="sociaux">
+            <a class="social" href="https://ca.linkedin.com/in/antoine-samson-11501032b?trk" target="_blank"><svg class="icon icon--md">
+                <use xlink:href="#icon-linkedin"></use>
+            </svg></a>
+            <a class="social" href="https://github.com/antoinesamson" target="_blank"><svg class="icon icon--md">
+                <use xlink:href="#icon-github"></use>
+            </svg></a>
+        </div>
+
+
+    </div>
+</footer>
+    
+
+</body>
+</html>
+
+<!--{% include "_includes/_footer.html" %} -->
