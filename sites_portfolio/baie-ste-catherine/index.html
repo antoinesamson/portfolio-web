@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baie Ste-Catherine</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header" data-component="Header">
+        <div class="wrapper">
+            <div class="menu">
+                <a href="index.html" class="logo">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-baleine"></use>
+                    </svg>
+
+                    <h3>Baie Ste-Catherine</h3>
+
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html#hero">Ville</a></li>
+                        <li><a href="index.html#news">Citoyen</a></li>
+                        <li><a href="index.html#story">Urbanisme</a></li>
+                        <li><a href="index.html#tourism">Loisirs & Tourisme</a></li>
+                        <li><a href="joindre.html#join">Nous joindre</a></li>
+                    </ul>
+                </nav>
+
+                <button class="header__toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero" id="hero">
+        <div class="swiper" data-component="Carousel" data-autoplay>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/images/hero-1.png" alt="image de la mer" /></div>
+                <div class="swiper-slide"><img src="assets/images/hero-2.png" alt="image de bateau sur la mer" /></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="wrapper">
+            <div class="hero-content">
+                <h3>Baie Ste-Catherine</h3>
+                <h1>Capitale de la zénitude et des baleines</h1>
+                <a class="button" href="#">
+                    Découvre les activités
+                    <div class="arrow">
+                        <svg class="icon icon--stroke">
+                            <use xlink:href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="news" id="news">
+
+        <h3>Actualités</h3>
+        <h2>Les dernières nouvelles</h2>
+
+        <div class="swiper" data-component="Carousel" data-slides>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-1.png" alt="Image de plage" />
+                        </div>
+                        <div class="card-content">
+                            <h6>15 mars 2024</h6>
+                            <h5>Communiqué</h5>
+                            <p>une attente qui en valait la peine ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-2.png" alt="Image de bateau" />
+                        </div>
+                        <div class="card-content">
+                            <h6>19 mars 2024</h6>
+                            <h5>Joyeuses pâques</h5>
+                            <p>Veuillez prendre note que ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-3.png" alt="Image d'église" />
+                        </div>
+                        <div class="card-content">
+                            <h6>28 mars 2024</h6>
+                            <h5>Avis public</h5>
+                            <p>Dépôt du 2e projet de règlement ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-4.png" alt="Image de terrasse" />
+                        </div>
+                        <div class="card-content">
+                            <h6>4 avril 2024</h6>
+                            <h5>Accès aux serveurs</h5>
+                            <p>Serveurs haute vitesse (HIV)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="button" href="#">
+            Voir toutes les nouvelles
+            <div class="arrow">
+                <svg class="icon icon--stroke">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </div>
+        </a>
+
+    </section>
+
+    <section class="story" id="story">
+        <div class="wrapper">
+            <div class="story-group">
+                <div class="story-media">
+                    <img src="assets/images/story-1.png" alt="Vieille image de moulin à scie" />
+                </div>
+
+                <div class="story-content">
+                    <h3>Histoire</h3>
+                    <h2>Anse Ste-Catherine</h2>
+                    <p>
+                        Baie-Sainte-Catherine fut d’abord appelée l’Anse à la Catherine, en rappel du naufrage du vaisseau La Catherine qui, au soir d’une tempête
+                        le 27 novembre 1686, alla s’échouer dans cette anse à l’entrée du Saguenay.
+                    </p>
+                    <p>
+                        Ce village est connu depuis plus d’un siècle par une traverse régulière qui relie les deux rives du Saguenay, de sorte qu’il est le passage
+                        obligé pour tous ceux qui veulent aller sur la Côte Nord ou en sortir. Ce fut en premier lieu un village industriel. William Price en 1843 y
+                        construisit un moulin à scie sur la première chute de la rivière aux Canards.
+                    </p>
+                </div>
+            </div>
+
+            <div class="story-group reverse">
+                <div class="story-content">
+                    <h3>Mission</h3>
+                    <h2>Comté de Saguenay</h2>
+                    <p>
+                        Comté de Saguenay. Diocèse de Chicoutimi. La mission de Saint-Firmin est assez ancienne. Les premiers colons, qui venaient de la Malbaie,
+                        s'y établirent vers 1820. Une chapelle y fut construite en 1875. Elle fut desservie jusqu'en 1901 par les curés et missionnaires de
+                        Tadoussac. Un curé y réside depuis 1901, année de l'ouverture des registres de la paroisse.
+                    </p>
+                    <p>
+                        La desserte de Saint-Firmin comprend le canton de Saguenay, lequel fut organisé en municipalité sous le nom de «Saint-Firmin», le 4 novembre
+                        1903, par arrêté-en-Conseil. Ce territoire faisait auparavant partie de la municipalité de Tadoussac.
+                    </p>
+                </div>
+
+                <div class="story-media">
+                    <img src="assets/images/story-2.png" alt="Image de chantier naval" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tourism" id="tourism">
+        <div class="wrappper">
+            <h3>Tourisme</h3>
+            <h2>Ce que nous pouvons offrir</h2>
+            <div class="activities">
+                <div class="activity">
+                    <img src="assets/images/activity-1.png" alt="Image de kayak et de fôrets" />
+                    <h5>Fleuve</h5>
+                </div>
+                <div class="activity">
+                    <img src="assets/images/activity-2.png" alt="Image de 2 personnes" />
+                    <h5>Événements</h5>
+                </div>
+                <div class="activity">
+                    <img src="assets/images/activity-3.png" alt="Image de panorama de la mer" />
+                    <h5>Panorama</h5>
+                </div>
+                <div class="activity">
+                    <img src="assets/images/activity-4.png" alt="Image de cabane devant la mer" />
+                    <h5>La paix</h5>
+                </div>
+            </div>
+
+            <a class="button" href="#">
+                Voir toutes les offres
+                <div class="arrow">
+                    <svg class="icon icon--stroke">
+                        <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="bas-de-page">
+                <div class="copyright">
+                    <h4>Travail étudiant</h4>
+                    <p>Projet fictif réalisé en techniques d'intégration multimédia du
+                        Cégep Édouard-Montpetit, sans but commercial. Les marques commerciales et
+                        les droits d'auteur sont la propriété de leurs propriétaires respectifs.</p>
+                    <p class="right">Design réalisé par Jean-François Leblanc
+                        et Matthieu Parent, professeurs.</p>
+                </div>
+
+                <div class="logo-footer">
+                    <a href="index.html" class="logo">
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-baleine"></use>
+                        </svg>
+
+                        <h3>Baie Ste-Catherine</h3>
+
+                    </a>
+
+                    <p>La ville où il fait bon vivre et où ça sent le sel à l’année longue.</p>
+
+                    <ul class="sociaux">
+                        <li><a href="https://www.instagram.com/explore/locations/297444837/baie-sainte-catherine-quebec/"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-insta"></use>
+                                </svg>
+                        <li><a href="https://www.facebook.com/MunicipalitedeBaieSainteCatherine/?locale=fr_CA"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg></a></li>
+                        <li><a href="https://twitter.com/MunicipaliteBSC"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg></a></li>
+                        <li><a href="https://www.pinterest.com/pin/baie-sainte-catherine-quebec--740842207441058161/"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-pinterest"></use>
+                                </svg></a></li>
+                    </ul>
+
+                </div>
+
+                <div class="liens">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="index.html#hero">À découvrir</a></li>
+                        <li><a href="index.html#tourism">Tourisme Charlevoix</a></li>
+                        <li><a href="index.html#story">Urbanisme</a></li>
+                        <li><a href="index.html#news">Avis publics</a></li>
+                        <li><a href="joindre.html">Offres d'emplois</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

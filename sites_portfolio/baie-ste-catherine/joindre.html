@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baie Ste-Catherine</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header" data-component="Header">
+        <div class="wrapper">
+            <div class="menu">
+                <a href="index.html" class="logo">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-baleine"></use>
+                    </svg>
+
+                    <h3>Baie Ste-Catherine</h3>
+
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html#hero">Ville</a></li>
+                        <li><a href="index.html#news">Citoyen</a></li>
+                        <li><a href="index.html#story">Urbanisme</a></li>
+                        <li><a href="index.html#tourism">Loisirs & Tourisme</a></li>
+                        <li><a href="joindre.html#join">Nous joindre</a></li>
+                    </ul>
+                </nav>
+
+                <button class="header__toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero" id="join">
+        <img src="assets/images/hero-3.png" alt="Image de plage vue d'un drone" />
+        <div class="wrapper">
+            <div class="hero-content">
+                <h3 class="blue">Nous joindre</h3>
+                <h1>Un paradis entre terre et mer à deux pas de Tadoussac</h1>
+            </div>
+        </div>
+    </div>
+
+    <section class="infos">
+
+        <div class="wrapper">
+            <div class="infos-media">
+                <img src="assets/images/map.png" alt="Image Google Maps de la ville">
+            </div>
+
+            <div class="infos-content">
+                <h2>Pour nous joindre</h2>
+                <div class="infos-adress">
+                    <h6>Édifice municipal Albert-Boulianne</h6>
+                    <h6>308, rue Leclerc</h6>
+                    <h6>Baie-Sainte-Catherine</h6>
+                    <h6>Québec, G0T 1A0</h6>
+                </div>
+
+                <a class="contact" href="mailto:municipalite@baiestecatherine.com">
+                    <div class="contact-icon"><svg class="icon icon--stroke">
+                            <use xlink:href="#icon-mail"></use>
+                        </svg></div>
+
+                    <div class="contact-content">
+                        <h5>Courriel</h5>
+                        <h6>municipalite@baiestecatherine.com</h6>
+                    </div>
+                </a>
+
+                <a class="contact" href="tel:4186205020">
+                    <div class="contact-icon"><svg class="icon icon--stroke">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg></div>
+
+                    <div class="contact-content">
+                        <h5>Téléphone</h5>
+                        <h6>418-620-5020</h6>
+                    </div>
+                </a>
+
+
+                <ul class="sociaux">
+                    <li><a href="https://www.instagram.com/explore/locations/297444837/baie-sainte-catherine-quebec/"><svg class="icon icon-xl">
+                                <use xlink:href="#icon-insta"></use>
+                            </svg>
+                    <li><a href="https://www.facebook.com/MunicipalitedeBaieSainteCatherine/?locale=fr_CA"><svg class="icon icon-xl">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg></a></li>
+                    <li><a href="https://twitter.com/MunicipaliteBSC"><svg class="icon icon-xl">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg></a></li>
+                    <li><a href="https://www.pinterest.com/pin/baie-sainte-catherine-quebec--740842207441058161/"><svg class="icon icon-xl">
+                                <use xlink:href="#icon-pinterest"></use>
+                            </svg></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="wrapper">
+
+            <form action="" class="form" autocomplete="off" data-component="Form">
+
+                <div class="form__body">
+                    <h5>Informations personnelles</h5>
+                    <fieldset class="grid">
+
+                        <div class="input">
+                            <label class="input__label" for="name">Votre prénom* </label>
+                            <input class="input__element" type="text" name="" id="name" placeholder="Jean-Eude" required>
+
+                            <div class="error_info">Veuillez entrer un prénom</div>
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="last-name">Votre nom* </label>
+                            <input class="input__element" type="text" name="" id="last-name" placeholder="Courtepaille" required>
+
+                            <div class="error_info">Veuillez entrer un nom</div>
+                        </div>
+
+                        <div class="input grid-fill">
+                            <label class="input__label" for="address">Addresse* </label>
+                            <input class="input__element" type="text" name="address" id="address" placeholder="2020, rue du Finfin" required>
+
+                            <div class="error_info">Veuillez entrer une adresse valide</div>
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="city">Ville* </label>
+                            <input class="input__element" type="text" name="city" id="city" placeholder="Longueuil" required>
+
+                            <div class="error_info">Veuillez entrer un nom de ville</div>
+                        </div>
+
+                        <div class="input select">
+                            <label class="input__label" for="province">Province* </label>
+                            <select name="province" id="province" class="input__element" required>
+                                <option value="" hidden>Choisir une province</option>
+                                <option value="qc">Québec</option>
+                                <option value="on">Ontario</option>
+                                <option value="ma">Manitoba</option>
+                                <option value="sa">Saskatchewan</option>
+                                <option value="al">Alberta</option>
+                                <option value="cb">Colombie Britanique</option>
+                                <option value="tn">Terre-Neuve et Labrador</option>
+                                <option value="ipe">Île du Prince Édouard</option>
+                                <option value="ne">Nouvelle Écosse</option>
+                            </select>
+
+                            <div class="error_info">Veuillez séléctionner une province</div>
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="phone">Votre numéro de téléphone* </label>
+                            <input class="input__element" type="tel" name="phone" id="phone" placeholder="(555) 625-3285" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
+
+                            <div class="error_info">Veuillez entrer un numéro de téléphone valide</div>
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="email">Votre adresse courriel* </label>
+                            <input class="input__element" type="email" name="email" id="email" placeholder="Jean-Eude@comtedelarocheliere.com" required>
+
+                            <div class="error_info">Veuillez entrer une adresse courriel valide</div>
+                        </div>
+
+
+                        <div class="form__list" data-input-container>
+                            <label class="input__label grid-fill" for="contact1">Méthode pour vous joindre* </label>
+
+                            <div class="input radio grid-fill">
+
+                                <input class="input__element" type="radio" name="contact" id="contact1" value="courriel" required>
+                                <label class="input__label grid-fill" for="contact1">Courriel</label>
+                            </div>
+
+                            <div class="input radio grid-fill">
+
+                                <input class="input__element" type="radio" name="contact" id="contact2" value="téléphone" required>
+                                <label class="input__label grid-fill" for="contact2">Téléphone</label>
+
+                                <div class="error_info">Veuillez sélectionner une méthode de contact</div>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+
+
+
+
+
+                    <fieldset class="grid">
+                        <h5>Requête citoyenne</h5>
+                        <div class="input select grid-fill">
+                            <label class="input__label" for="subject">Sujet*</label>
+                            <select name="subject" id="subject" class="input__element" required>
+                                <option value="" hidden>Sélectionnez une requête</option>
+                                <option value="p">Permis de stationnement</option>
+                                <option value="d">Demande de renseignements</option>
+                                <option value="r">Réservation de salle</option>
+                                <option value="a">Autre</option>
+                            </select>
+
+                            <div class="error_info">Veuillez entrer un sujet</div>
+                        </div>
+
+                        <div class="input textarea grid-fill">
+                            <label class="input__label" for="comment">Commentaire* </label>
+                            <textarea class="input__element" name="comment" id="comment" maxlength="500" placeholder="Inscrire votre requête ici" required></textarea>
+                            <div class="error_info">Veuillez entrer votre requête ici</div>
+                        </div>
+
+                        <label class="input__label grid-fill" for="optin">Conditions d'utilisation* </label>
+                        <div class="input checkbox grid-fill">
+
+                            <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" required>
+                            <label class="input__label " for="optin">j'accepte les conditions d'utilisation </label>
+
+                            <div class="error_info">Vous devez accepter les conditions d'utilisation</div>
+                        </div>
+                    </fieldset>
+
+
+                    <footer class="form__footer">
+                        <button class="button">
+                            Envoyer
+                            <div class="arrow">
+                                <svg class="icon icon--stroke icon--sm">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </footer>
+
+                </div>
+
+                <div class="form__confirmation">
+                    <h2>Merci beaucoup</h2>
+                    <p>Votre formulaire a été envoyé et sera pris en charge dans les plus brefs délais</p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="faq" data-component="Accordion">
+        <div class="wrapper">
+            <h3>Questions fréquentes</h3>
+            <h2>Connaissez-nous mieux</h2>
+
+            <div class="question-group js-header" data-autoopen>
+                <div class="question">
+                    <h5>Qu'est-ce que la MRC de Baie Ste-Catherine?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>La MRC de Baie Ste-Catherine est une municipalité
+                        régionale de comté située dans la région administrative de la Côte-Nord au Québec, Canada.</p>
+                </div>
+            </div>
+
+            <div class="question-group js-header">
+                <div class="question">
+                    <h5>Quelle est la population de la MRC de Baie Ste-Catherine?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>Selon le recensement de 2016, la population de la MRC de
+                        Baie Ste-Catherine est de 3 229 habitants.
+                    </p>
+                </div>
+            </div>
+
+            <div class="question-group js-header">
+                <div class="question">
+                    <h5>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>Les principales industries de la MRC de Baie Ste-Catherine sont la pêche,
+                        le transport maritime, le tourisme et l'agriculture.</p>
+                </div>
+            </div>
+
+            <div class="question-group js-header">
+                <div class="question">
+                    <h5>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une destination populaire pour
+                        les excursions d'observation des baleines. Elle compte également de nombreux sentiers de randonnée, des plages,
+                        des musées et des festivals tout au long de l'année.</p>
+                </div>
+            </div>
+
+            <div class="question-group js-header">
+                <div class="question">
+                    <h5>Quels sont les services offerts par la MRC de Baie Ste-Catherine à ses citoyens?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>La MRC de Baie Ste-Catherine offre une gamme de services à ses citoyens, notamment des services de gestion des déchets,
+                        des services de protection contre les incendies, des services de développement économique
+                        et touristique et des services de transport en commun.</p>
+                </div>
+            </div>
+
+            <div class="question-group js-header">
+                <div class="question">
+                    <h5>Quels sont les événements annuels organisés par la MRC de Baie Ste-Catherine?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>La MRC de Baie Ste-Catherine organise plusieurs événements tout au long de l'année,
+                        tels que la Fête de la pêche, la Journée internationale des femmes,
+                        la Fête de la musique et le Tournoi de hockey Baie Ste-Catherine.</p>
+                </div>
+            </div>
+
+            <div class="question-group js-header">
+                <div class="question">
+                    <h5>Quels sont les projets en cours dans la MRC de Baie Ste-Catherine?</h5>
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p>La MRC de Baie Ste-Catherine travaille actuellement sur
+                        plusieurs projets, notamment le développement d'un parc
+                        industriel et l'amélioration des infrastructures de transport.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos">
+        <div class="wrapper">
+            <h3>Vidéos</h3>
+            <h2>La ville en mouvement</h2>
+
+            <div class="videos-container">
+
+                <div class="video" data-component="Youtube" data-video-id="zpK4aHvleIY">
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="assets/images/poster1.png" alt="Vue d'une montagne sur coucher de soleil" />
+                        <svg class="icon icon--xl">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="video" data-component="Youtube" data-video-id="y69LYSdOMOc">
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="assets/images/poster2.png" alt="Vue aérienne de la mer" />
+                        <svg class="icon icon--xl">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="bas-de-page">
+                <div class="copyright">
+                    <h4>Travail étudiant</h4>
+                    <p>Projet fictif réalisé en techniques d'intégration multimédia du
+                        Cégep Édouard-Montpetit, sans but commercial. Les marques commerciales et
+                        les droits d'auteur sont la propriété de leurs propriétaires respectifs.</p>
+                    <p class="right">Design réalisé par Jean-François Leblanc
+                        et Matthieu Parent, professeurs.</p>
+                </div>
+
+                <div class="logo-footer">
+                    <a href="index.html" class="logo">
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-baleine"></use>
+                        </svg>
+
+                        <h3>Baie Ste-Catherine</h3>
+
+                    </a>
+
+                    <p>La ville où il fait bon vivre et où ça sent le sel à l’année longue.</p>
+
+                    <ul class="sociaux">
+                        <li><a href="https://www.instagram.com/explore/locations/297444837/baie-sainte-catherine-quebec/"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-insta"></use>
+                                </svg>
+                        <li><a href="https://www.facebook.com/MunicipalitedeBaieSainteCatherine/?locale=fr_CA"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg></a></li>
+                        <li><a href="https://twitter.com/MunicipaliteBSC"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg></a></li>
+                        <li><a href="https://www.pinterest.com/pin/baie-sainte-catherine-quebec--740842207441058161/"><svg class="icon icon-xl">
+                                    <use xlink:href="#icon-pinterest"></use>
+                                </svg></a></li>
+                    </ul>
+
+                </div>
+
+                <div class="liens">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="index.html#hero">À découvrir</a></li>
+                        <li><a href="index.html#tourism">Tourisme Charlevoix</a></li>
+                        <li><a href="index.html#story">Urbanisme</a></li>
+                        <li><a href="index.html#news">Avis publics</a></li>
+                        <li><a href="joindre.html">Offres d'emplois</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
